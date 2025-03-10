@@ -3,10 +3,11 @@ def bubble_sort(arr):
     for i in range (l-1):
         for j in range (l-1):
           if arr[j]>arr[j+1]:
-           temp = arr[j]
+        #    temp = arr[j]
 
-           arr[j]= arr[j+1]
-           arr[j+1]= temp
+        #    arr[j]= arr[j+1]
+        #    arr[j+1]= temp
+            arr[j],arr[j+1] = arr[j+1], arr[j]
 
     return arr
 
